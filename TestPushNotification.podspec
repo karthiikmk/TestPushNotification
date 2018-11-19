@@ -1,42 +1,18 @@
-#
-# Be sure to run `pod lib lint TestPushNotification.podspec' to ensure this is a
-# valid spec before submitting.
-#
-# Any lines starting with a # are optional, but their use is encouraged
-# To learn more about a Podspec see https://guides.cocoapods.org/syntax/podspec.html
-#
+
 
 Pod::Spec.new do |s|
   s.name             = 'TestPushNotification'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of TestPushNotification.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
-
+  s.version          = '1.0'
+  s.summary          = 'A candy for firing notification with custom payloads'
+  s.description      = 'Testing Notification is always hard when it comes to iOS. Here is a small chunk which uses firebase api, where you can pass your custom payload to fire a notification.'
   s.homepage         = 'https://github.com/karthikAdaptavant/TestPushNotification'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'karthikAdaptavant' => 'karthik.samy@a-cti.com' }
   s.source           = { :git => 'https://github.com/karthikAdaptavant/TestPushNotification.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
-  s.ios.deployment_target = '8.0'
-
+  s.social_media_url = 'https://twitter.com/i_am_kaarthik'
+  s.ios.deployment_target = '9.0'
   s.source_files = 'TestPushNotification/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'TestPushNotification' => ['TestPushNotification/Assets/*.png']
-  # }
+  s.dependency 'Alamofire', '~> 4.7'
+  s.dependency 'SwiftyJSON'
 
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end
