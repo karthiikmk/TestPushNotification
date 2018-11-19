@@ -21,7 +21,8 @@ pod 'TestPushNotification'
 ```
 
 ## Usage 
-``` .   let authKey = "{your auth key goes here}"
+```swift
+        let authKey = "{your auth key goes here}"
          
         let fcmKey = ["c7igErTWSB0:APA91bFoYmSqQa-v-xZkpWRYvXWEfvE79fme4jVAQTTyhHjdFi6_Q9tP3uskevnnB2_5_WTeLkrCZyok2F_JFR3b2NgAoyEVCgwVWAgFcPZoRTZR5neaibqaTTgad4AyeOnew5sGEyHf"]
         
