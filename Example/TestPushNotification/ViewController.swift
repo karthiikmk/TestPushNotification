@@ -23,9 +23,9 @@ class ViewController: UIViewController {
     
     @IBAction func fireBtnAct(_ sender: Any) {
             
-        let authKey = "{your auth key goes here}"
-        let fcmKey = ["list of fcm tokens"]
-        let data = NotificationData(title: "Karthik", body: "Hi, there this is test")
+        let authKey = "{your server key goes here}"
+        let fcmKey = ["your fcm token goes here"]
+        let data = NotificationData(title: "", body: "", sound: "", clickAction: "", mutableContent: false, contentAvailable: true)
         let pushData = PushNotificationData(authKey: authKey, fcmToken: fcmKey, notificationData: data)
         let testPush = TestPushManager(pushData: pushData)
         testPush.fire()

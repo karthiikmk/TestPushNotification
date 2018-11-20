@@ -10,13 +10,13 @@ import Alamofire
 import SwiftyJSON
 
 public struct NotificationData {
-    var title: String = ""
-    var body: String = ""
+    public var title: String = ""
+    public var body: String = ""
     public var icon: String = "ic_launcher"
-    var sound: String = ""
-    var clickAction: String = ""
-    var mutableContent: Bool = false
-    var contentAvailable: Bool = false
+    public var sound: String = ""
+    public var clickAction: String = ""
+    public var mutableContent: Bool = false
+    public var contentAvailable: Bool = false
     
     public init(title: String, body: String) {
         self.title = title
@@ -64,7 +64,12 @@ public struct PushNotificationData {
         payload["priority"] = "high"
         payload.add(key: "data", value: [:])
         payload.add(key: "registration_ids", value: self.fcmToken)
-        payload.add(key: "notification", value: self.data.toDict())
+        
+        if self.data.contentAvailable == true {
+            payload.add(key: "content_available", value: true)
+        } else {
+            payload.add(key: "notification", value: self.data.toDict())
+        }
         return payload
     }
 }
