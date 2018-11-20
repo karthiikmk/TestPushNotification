@@ -2,7 +2,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TestPushNotification'
-  s.version          = '1.0'
+  s.version          = '1.1'
   s.swift_version    = '4.0'
   s.summary          = 'A candy for firing notification with custom payloads'
   s.description      = 'Testing Notification is always hard when it comes to iOS. Here is a small chunk which uses firebase api, where you can pass your custom payload to fire a notification.'
