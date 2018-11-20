@@ -1,4 +1,4 @@
-# TestPushNotification
+# 🚀 TestPushNotification 🚀
 
 [![CI Status](https://img.shields.io/travis/karthikAdaptavant/TestPushNotification.svg?style=flat)](https://travis-ci.org/karthikAdaptavant/TestPushNotification)
 [![Version](https://img.shields.io/cocoapods/v/TestPushNotification.svg?style=flat)](https://cocoapods.org/pods/TestPushNotification)
@@ -20,7 +20,7 @@ it, simply add the following line to your Podfile:
 pod 'TestPushNotification'
 ```
 
-## Usage 
+## 🤞 Usage 🤞
 ```swift
         let authKey = "{your auth key goes here}"
          
