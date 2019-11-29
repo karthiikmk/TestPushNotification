@@ -1,7 +1,7 @@
 PODS:
   - Alamofire (4.7.3)
   - SwiftyJSON (4.0.0)
-  - TestPushNotification (1.0):
+  - TestPushNotification (1.1):
     - Alamofire (~> 4.7)
     - SwiftyJSON (= 4.0)
 
@@ -9,7 +9,7 @@ DEPENDENCIES:
   - TestPushNotification (from `../`)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - Alamofire
     - SwiftyJSON
 
@@ -20,8 +20,8 @@ EXTERNAL SOURCES:
 SPEC CHECKSUMS:
   Alamofire: c7287b6e5d7da964a70935e5db17046b7fde6568
   SwiftyJSON: 070dabdcb1beb81b247c65ffa3a79dbbfb3b48aa
-  TestPushNotification: 6c10bdc3e6225923ef06afcf878b443d8e9d432a
+  TestPushNotification: f53dcbcf8cf5355d08da53cae0010cb1f9091a05
 
 PODFILE CHECKSUM: 0722a48781d2f3ee165b9b0e52c532dca9661d3c
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.4
