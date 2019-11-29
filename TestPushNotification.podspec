@@ -12,7 +12,7 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/karthikAdaptavant/TestPushNotification.git', :tag => s.version.to_s }
   s.social_media_url = 'https://twitter.com/i_am_kaarthik'
   s.ios.deployment_target = '9.0'
-  s.source_files = 'TestPushNotification/Classes/**/*'
+  s.source_files = 'Sources/TestPushNotification/Classes/**/*'
   s.dependency 'Alamofire', '~> 4.7'
   s.dependency 'SwiftyJSON', '4.0'
 
